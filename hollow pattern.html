@@ -1,1 +1,37 @@
-coding
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star-Pattern-Program</title>
+  </head>
+  <body>
+    <h2> Hollow Square Star</h2>
+    <script>
+      let a = 5;
+      let result = "";
+
+      for (let i = 1; i <= a; i++) {
+        for (let j = 1; j <= a; j++) {
+          if (i == 1 || i == a || j == 1 || j == a) {
+            result += "*";
+          } else {
+            result += " ";
+          }
+        }
+        result += "\n";
+      }
+
+      console.log(result);
+    
+//    Pattern Result:
+//    *****
+//    *   *
+//    *   *
+//    *   *
+//    *****
+
+</script>
+  </body>
+</html>
+
